@@ -1,0 +1,145 @@
+body,
+html {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.container-fluid,
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+
+/* Berita */
+#content-berita .card-text {
+    font-size: 14px;
+    font-family: 'Roboto Medium', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+.mini-card {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.mini-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.mini-card .card-body {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mini-card .card-text {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.2;
+}
+
+/* Berita Kanan */
+.card-img-berita {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body-right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.card-body-right .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card-body-right .card-text {
+    font-size: 0.9rem;
+    flex-grow: 1;
+    margin-bottom: 0.5rem;
+}
+
+.card-body-right a {
+    margin-top: auto;
+    text-align: right;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Pengumuman */
+.content-pengumuman {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pengumuman-big-card {
+    border-radius: 10px !important;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+.pengumuman-big-card-img {
+    height: 370px;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.pengumuman-list-group-img {
+    width: 185px;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pengumuman-list-group-item {
+    border-radius: 8px;
+}
+
+/* Agenda */
+#content-agenda .card-text {
+    font-size: 14px;
+    font-family: 'Roboto Medium', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+.agenda-big-card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+/* Informasi */
+#content-informasi .card-text {
+    font-size: 14px;
+    font-family: 'Roboto Medium', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}

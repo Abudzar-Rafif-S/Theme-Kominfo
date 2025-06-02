@@ -1,0 +1,114 @@
+body,
+html {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.container-fluid,
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+
+/* Top Menu */
+.navbar {
+    background-color: #6499E9;
+}
+
+.upper-section {
+    margin-top: 100px;
+}
+
+.profile-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+    border: 2px solid #9EDDFF;
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.form-control-custom {
+    border: 2px solid #9EDDFF !important;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.form-control-custom:focus {
+    box-shadow: none;
+    border-color: #9EDDFF !important;
+}
+
+.search-btn {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9EDDFF !important;
+}
+
+.input-group-custom {
+    position: relative;
+}
+
+.dropdown-custom {
+    border: 2px solid #9EDDFF !important;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* main */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #6499E9 !important;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #9EDDFF !important;
+    text-align: center;
+}
+
+.table-footer-container {
+    padding: 10px 0;
+    border-top: 1px solid #ACE2E1;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+/* Responsifkan pagination DataTables */
+.table-footer-container .pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.table-footer-container .page-item {
+    margin: 2px;
+}
+
+@media (max-width: 576px) {
+    .table-footer-container .pagination {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,86 @@
+/* Sidebar */
+#sidebar {
+    margin-top: 30px;
+    transition: top 0.3s ease;
+}
+
+/* Efek bayangan */
+.card-shadow {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Warna latar sidebar */
+.button-sidebar-cover {
+    background-color: #ACE2E1;
+    border-radius: 10px;
+}
+
+/* Sticky sidebar pada desktop */
+.sticky-sidebar {
+    position: sticky;
+    top: 100px; /* Sesuaikan tinggi navbar */
+    width: 300px;
+    z-index: 999;
+}
+
+/* Sidebar tetap menempel sebelum footer */
+.sidebar-stop {
+    position: absolute !important;
+}
+
+/* Button Side Menu */
+.btn-side-menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    background: none;
+    border: 2px solid #008DDA;
+    color: #008DDA;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    border-radius: 8px;
+    width: 100%;
+    height: 45px;
+}
+
+.btn-side-menu:hover {
+    background: #008DDA;
+    color: #fff;
+    border-color: #008DDA;
+    box-shadow: 0 4px 10px rgba(29, 66, 106, 0.484);
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .sticky-sidebar {
+        position: relative !important;
+        width: 100%;
+        top: 0;
+    }
+
+    #sidebar {
+        margin-top: 20px;
+    }
+
+    .btn-side-menu {
+        font-size: 16px;
+        height: 42px;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-side-menu {
+        font-size: 15px;
+        height: 40px;
+        padding: 6px 12px;
+    }
+}

@@ -1,0 +1,173 @@
+/* Button Lapor 1 */
+.button-custom1 {
+    width: 300px;
+    height: 60px;
+    background: none;
+    border: 2px solid #1152F4;
+    color: #1152F4;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    border-radius: 8px;
+}
+
+.button-custom1::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transition: width 0.4s ease, height 0.4s ease, top 0.4s ease, left 0.4s ease;
+    transform: translate(-50%, -50%);
+}
+
+.button-custom1:hover::before {
+    width: 250px;
+    height: 250px;
+}
+
+.button-custom1:hover {
+    background: #1152F4;
+    color: #fff;
+    border-color: #1152F4;
+    box-shadow: 0 4px 10px rgba(29, 66, 106, 0.484);
+    border-radius: 40px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Button Lapor 2 */
+.button-custom2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px; 
+    background: none;
+    border: 2px solid #ba1919;
+    color: #ba1919;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    border-radius: 8px;
+    gap: 8px; 
+    width: 300px;
+    height: 65px;
+}
+
+.button-custom2 i {
+    font-size: 22px; 
+}
+
+.button-custom2::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transition: width 0.4s ease, height 0.4s ease, top 0.4s ease, left 0.4s ease;
+    transform: translate(-50%, -50%);
+}
+
+.button-custom2:hover::before {
+    width: 250px;
+    height: 250px;
+}
+
+.button-custom2:hover {
+    background: #ba1919;
+    color: #fff;
+    border-color: #ba1919;
+    box-shadow: 0 4px 10px rgba(186, 25, 25, 0.5);
+    border-radius: 40px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.icon-block{
+    margin-top: 10px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ikon pertama, ditaruh lebih ke bawah kanan */
+.icon-1 {
+    position: absolute;
+    font-size: 3rem;
+    top: 10%;
+    left: 20%;
+}
+
+/* Ikon kedua, ditaruh lebih ke atas kiri */
+.icon-2 {
+    position: absolute;
+    font-size: 3rem;
+    top: -10%;
+    left: -20%;
+}
+
+/* Button Lapor 3 */
+.button-custom3 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px; 
+    background: none;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    border-radius: 8px;
+    gap: 8px; 
+    width: 300px;
+    height: 65px;
+}
+
+.button-custom3::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transition: width 0.4s ease, height 0.4s ease, top 0.4s ease, left 0.4s ease;
+    transform: translate(-50%, -50%);
+}
+
+.button-custom3:hover::before {
+    width: 250px;
+    height: 250px;
+}
+
+.button-custom3:hover {
+    border-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.button-custom3 img {
+    border-radius: 8px;
+    width: 300px;
+    height: 45px;
+}

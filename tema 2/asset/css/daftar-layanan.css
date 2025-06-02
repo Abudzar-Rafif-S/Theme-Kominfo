@@ -1,0 +1,55 @@
+body,
+html {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.container-fluid,
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+
+.service-card {
+    background-color: none;
+    color: #000;
+    border-radius: 5px;
+    border: 1px solid #9EDDFF;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+}
+
+.service-title {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Roboto Medium', sans-serif;
+}
+
+.service-text {
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    position: absolute;
+    padding: 5px 10px;
+    overflow: hidden;
+    bottom: 10px;
+    right: 10px;
+}

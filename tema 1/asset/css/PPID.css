@@ -1,0 +1,90 @@
+body, html {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.container-fluid,
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #008DDA;
+}
+
+/* main content */
+.img-content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 40px auto; /* center di tengah dan beri margin bawah */
+    padding: 0 15px; /* beri padding untuk menghindari mepet di mobile */
+}
+
+.img-PPID {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    border-radius: 20px;
+}
+
+/* kontainer deskripsi */
+.description-content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: auto;
+}
+
+.description-content h2 {
+    font-size: 2rem; /* pakai unit relatif agar fleksibel */
+    font-family: 'Roboto Medium', sans-serif;
+}
+
+.description-content p {
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+    .description-content h2 {
+        font-size: 1.75rem;
+    }
+
+    .description-content p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-PPID {
+        border-radius: 15px;
+    }
+
+    .description-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .description-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .description-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .description-content p {
+        font-size: 0.875rem;
+    }
+}

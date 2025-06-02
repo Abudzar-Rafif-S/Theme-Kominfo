@@ -1,0 +1,35 @@
+.navbar {
+    background-color: #6499E9;
+}
+
+.upper-section{
+    margin-top: 100px;
+}
+
+.button-row .col-auto {
+    margin-bottom: 10px;
+}
+
+.profile-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+    border: 2px solid #9EDDFF;
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.fa-icon i {
+    font-size: 16px;
+    color: #000;
+}
+
+.heading-text {
+    font-size: 22px;
+    font-weight: 600;
+}

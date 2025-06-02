@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISKOMINFO</title>
+
+    <!-- Script CSS CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/raleway-5" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+
+    <!-- Script CSS Lokal -->
+    <link rel="stylesheet" href="asset/css/partial/navbar.css">
+    <link rel="stylesheet" href="asset/css/partial/button.css">
+    <link rel="stylesheet" href="asset/css/partial/footer.css">
+    <link rel="stylesheet" href="asset/css/dokumen-publik.css">
+
+</head>
+
+<body>
+    <!-- Navbar Begin -->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="mainNavbar">
+            <a class="navbar-brand" href="index.html">
+                <img src="asset/img/Lambang_Kabupaten_Lamongan.png" class="logo-nav" alt="logo-dinas"> DISKOMINFO
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Profil
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="profil.html">Tentang Kami</a>
+                            <a class="dropdown-item" href="profil.html">Visi dan Misi</a>
+                            <a class="dropdown-item" href="profil.html">Struktur Organisasi</a>
+                            <a class="dropdown-item" href="profil.html">Kontak Kami</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeri.html">Galeri</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="profil.html">Maklumat Pelayanan</a>
+                            <a class="dropdown-item" href="pelayanan.html">Daftar Pelayanan</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dokumen-publik.html">Dokumen Publik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PPID.html">PPID</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Upper Section Begin -->
+    <section id="upper-section" class="upper-section">
+        <div class="container-fluid px-0 mx-0">
+            <div class="title-cover d-flex justify-content-center align-items-end w-100 ">
+                <h1 style="font-family: 'Roboto Medium', sans-serif; font-size: 40px;">Dokumen Publik
+                </h1>
+            </div>
+            <div class="row justify-content-center align-items-center gy-3 gx-3 flex-wrap text-center mt-4 mb-3">
+                <div class="col-12 col-md-6 mb-2 d-flex justify-content-center">
+                    <div class="d-flex w-100 align-items-center" style="max-width: 500px;">
+                        <input type="text" class="form-control search-input" placeholder="Search...">
+                        <button type="submit" class="btn btn-primary ml-2 search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-center">
+                    <select class="form-control custom-select custom-select-lg" style="max-width: 400px;">
+                        <option selected disabled>Pilih Kategori</option>
+                        <option value="1">Laporan Tahunan</option>
+                        <option value="2">Laporan Keuangan</option>
+                        <option value="3">Informasi Publik</option>
+                        <option value="4">Dokumen Lain</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Upper Section End -->
+
+
+    <!-- Content-Profile Begin -->
+    <section id="content-profile" class="content-profile">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- Main Content Dokumen Publik Begin -->
+                <div class="col-md-12 mb-3">
+                    <div class="container-fluid">
+                        <table id="documentTable" class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>NO</th>
+                                    <th>Dokumen</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Data akan diisi melalui script.js -->
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3" id="tableFooter" class="text-center font-weight-bold" style="color: #008DDA; font-family: 'Raleway', sans-serif;">
+                                        <!-- Konten footer tabel akan ditulis oleh JavaScript -->
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>                        
+                    </div>
+                </div>
+                <!-- Main Content Dokumen Publik End -->
+
+            </div>
+        </div>
+    </section>
+    <!-- Content-Profile End -->
+
+    <!-- Footer Begin -->
+    <footer class="footer" id="footer">
+        <div class="container-fluid px-0 mx-0">
+            <div class="row">
+
+                <!-- Icon Group Begin -->
+                <div class="col-md-8">
+                    <ul class="list-group list-group-horizontal-md ">
+                        <li class="list-group-item footer-list-group-item text-center">
+                            <i class="fa-solid fa-building fa-2x mb-2"></i><br>
+                            <span>dinas komunikasi dan informatika kabupaten lamongan</span>
+                        </li>
+                        <li class="list-group-item footer-list-group-item text-center">
+                            <i class="fa-solid fa-location-dot fa-2x mb-2"></i><br>
+                            <span>Jl. KH. Ahmad Dahlan, Kauman, Sidoharjo, Kec. Lamongan, Kabupaten Lamongan</span>
+                        </li>
+                        <li class="list-group-item footer-list-group-item text-center">
+                            <i class="fa-solid fa-envelope fa-2x mb-2"></i><br>
+                            <span>diskominfolamongan@gmail.com</span>
+                        </li>
+                        <li class="list-group-item footer-list-group-item text-center">
+                            <i class="fa-solid fa-phone fa-2x mb-2"></i><br>
+                            <span>+62 8472348134</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Icon Group End -->
+
+                <!-- Sosial Media Begin -->
+                <div class="col-md-4 ">
+                    <img src="asset/img/footer-logo.png" alt="footer-logo" class="footer-logo">
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-chrome"></i></a>
+                        <a href="#"><i class="fa-regular fa-message"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- Sosial Media End -->
+            </div>
+
+            <div class="text-center mt-2">
+                <p>&copy; 2025 Dinas Komunikasi dan Informatika Kabupaten Lamongan</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- jQuery (Full Version - Wajib Paling Awal) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- Popper.js (Diperlukan oleh Bootstrap) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Bootstrap 4.3.1 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Skrip Lokal -->
+    <script src="asset/js/navbar.js"></script>
+    <script src="asset/js/dokumen-publik.js"></script>
+
+</body>
+
+</html>
